@@ -2,6 +2,10 @@
   "name": "st_charts",
   "version": "0.1.0",
   "dependencies": {
+    "@babel/runtime": "^7.22.10",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "st_charts": "^0.1.0",
@@ -9,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,7 +39,8 @@
     "babel-cli": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "webpack-cli": "^5.1.4"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
