@@ -1,1 +1,1 @@
-# ST_Charts is thee charting library for developers who want add analytics to the projects
+# ST_Charts is the charting library for developers who want add analytics to the projects
